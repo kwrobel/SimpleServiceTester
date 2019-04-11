@@ -6,3 +6,6 @@
 # Maven
 log/
 target/
+
+# Netbeans
+nbactions.xml

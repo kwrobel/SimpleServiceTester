@@ -47,8 +47,7 @@ public class TestRunner {
             
             // Loop over MAX_POSTS random posts and show the title and user id who posted it
             Random random = new Random();
-            IntStream ints = random.ints(0, posts.size() - 1).distinct();
-            IntStream randomElements = ints.limit(MAX_POSTS);
+            IntStream randomElements = random.ints(0, posts.size() - 1).distinct().limit(MAX_POSTS);
             
             randomElements.forEach(
                     i -> {
